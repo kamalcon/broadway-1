@@ -3,6 +3,7 @@ html, body {
   font-family: Helvetica, sans-serif;
 }
 
+/*apply to items with either class main-banner or minor-banner*/
 .main-banner, .minor-banner {
   color: white;
   /*background-image: url(/run/user/1000/gvfs/smb-share:server=fritz-nas,share=homenetwork.nas/Seagate-ExpansionDesk-03/COMPANIES/SkyQode.Ltd/SoftwareDev/Atom/Projects/03.Git.and.GitHub/broadway/resources/images/the-flatiron-building.png);*/
@@ -25,8 +26,15 @@ nav a {
   color: white;
 }
 
+/*nested under item with class process-section: apply font size to h2, h3 and p respectively*/
 .process-section h2 {
   font-size: 32px;
+}
+.process-section h3 {
+  font-size: 23px;
+}
+.process-section p {
+  font-size: 14px;
 }
 
 /*line spacing*/
@@ -40,7 +48,8 @@ footer {
   text-align: left;
 }
 
-/*nested a didn't (for some reason> inherit the color white from footer!!)*/
+/*Nested <a> didn't (for some reason) inherit the color white from footer!!)
+  So we forced using this elaborate nested path!!!*/
 footer nav p a {
   color: white;
 }
