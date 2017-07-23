@@ -10,22 +10,39 @@ html, body {
 
 }
 
+/*all <h1> nested inside item with class main-banner*/
 .main-banner h1 {
   font-size: 70px
 }
 
+/*all <a> nested in <nav>*/
 nav a {
   font-size: 18px;
 }
 
+/*all <a> nested inside <p>, nested inside <nav>, nested inside item with class main-banner*/
+.main-banner nav p a {
+  color: white;
+}
+
+.process-section h2 {
+  font-size: 32px;
+}
+
+/*line spacing*/
 .small-line-height {
-  line-height: 70%;
+  line-height: 50%;
 }
 
 footer {
   color: white;
   background-color: dimgray;
   text-align: left;
+}
+
+/*nested a didn't (for some reason> inherit the color white from footer!!)*/
+footer nav p a {
+  color: white;
 }
 
 .copy-right {
